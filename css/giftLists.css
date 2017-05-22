@@ -1,9 +1,28 @@
+*{
+		 -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight-color: transparent; tap-highlight-color:rgba(0,0,0,0); tap-highlight-color:transparent;
+	}
 body{
   background-image: url('images/bjlogo.png');
-  background-color:#4381d7;
+  background-color:#3c7fc2;
   background-size:6.4rem auto;
+  font-family: '微软雅黑';
 }
-
+.clrDiv{
+  width: 0;
+  height:0;
+  display: block;
+  clear:both;
+}
+.color3c7fc2{
+  background:#3c7fc2;
+  border:2px solid #3c7fc2;
+  border-top:none;
+}
+.colore22a72{
+  background:#e22a72;
+  border:2px solid #e22a72;
+  border-top:none;
+}
 .warpAll{
   width:6.4rem;
   margin:0 auto;
@@ -17,27 +36,294 @@ body{
 }
 .ck_myGift{
   float:left;
+  margin-top:-0.15rem;
   width:100%;
   font-size:0.26rem;
   color:#fff;
   text-decoration:underline;
 }
-
+.cjgz_btn{
+  position: absolute;
+  right:-0.1rem;
+  top:3.15rem;
+  width:1.37rem;
+  height:0.45rem;
+  font-size:0.26rem;
+  color: #fff;
+  line-height: 0.45rem;
+  text-align: center;
+  background: #fa678e;
+  border-radius: 0.16rem;
+}
 /*奖品列表区域部分开始*/
 .giftList_warp{
   width:5.94rem;
   margin:0.7rem auto 1rem;
   background: #fff;
   position: relative;
+  padding-top:1rem;
+  padding-bottom:0.45rem;
 }
 .giftL_tit{
   position: absolute;
-  top:-0.2rem;
+  top:-0.3rem;
   left:1.02rem;
   width:3.9rem;
   height:1.15rem;
 }
-
-
+.gift_ul{
+  width:5.16rem;
+  margin:0 auto;
+  font-size:0.3rem;
+  color:#fff;
+  line-height: 0.32rem;
+}
+.gift_ul>li{
+  float:left;
+  width:2.45rem;
+  margin-right:0.1rem;
+  margin-bottom:0.2rem;
+  display: table;
+  -webkit-display: table;
+}
+.marginR0{
+  margin-right:0!important;
+}
+.gift_ul .gift_li1{
+  width:5.12rem;
+  height:1.8rem;
+  display: table;
+  -webkit-display: table;
+}
+.gift_pic_wD1{
+  float:left;
+  height:1.75rem;
+  border:2px dashed #3c7fc2;
+  border-right:none;
+}
+.gift_pic1{
+  width:1.75rem;
+  height:1.75rem;
+  margin:0 auto;
+}
+.gift_txt1{
+  float:right;
+  width:2.6rem;
+  height:1.75rem;
+  padding:0 0.35rem;
+  text-align: left;
+  background: #3c7fc2;
+  border:2px solid #3c7fc2;
+  border-left:none;
+  display:table-cell;
+  vertical-align:middle;
+  -webkit-display:table-cell;
+  -webkit-vertical-align:middle;
+  position: relative;
+}
+.gift_txt1>p,.gift_txt2>p{
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  -webkit-transform:translateY(-50%);
+}
+.gift_pic_wD2{
+  width:2.45rem;
+  height:1.75rem;
+  border:2px dashed #3c7fc2;
+  border-bottom:none;
+}
+.gift_pic2{
+  width:1.9rem;
+  height:1.75rem;
+  margin:0 auto;
+}
+.gift_txt2{
+  text-align: left;
+  width:2.05rem;
+  height:0.95rem;
+  padding:0 0.2rem;
+  position: relative;
+}
 
 /*奖品列表区域部分结束*/
+
+.suspend_bottom{
+  position: fixed;
+  bottom:0rem;
+  left:0;
+  width:100%;
+  height:0.8rem;
+  padding:0.3rem 0;
+  background: #3c7fc2;
+  text-align: center;
+}
+.sweepstakeBtn{
+  margin:0 auto;
+  width:5.7rem;
+  height:0.8rem;
+  font-size:0.34rem;
+  color:#fff;
+  line-height:0.8rem;
+  text-align: center;
+  background:#de2567;
+  border-radius: 0.1rem;
+  z-index: 5;
+}
+.mc_bg{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background: #000;
+  opacity: 0.6;
+  z-index: 10;
+}
+/*抽奖弹层部分开始*/
+.tc_divs{
+  position: fixed;
+  width:4.9rem;
+  left:50%;
+  top:50%;
+  margin-left:-2.45rem;
+  z-index: 15;
+}
+.sweepstake_tc{
+  height:5.8rem;
+  margin-top:-2.9rem;
+  display: none;
+}
+.star1{
+  position: absolute;
+  top:1.25rem;
+  left:0.57rem;
+  width:3.87rem;
+  height:1.05rem;
+}
+.gift_box1{
+  position: absolute;
+  top:0;
+  left:1.25rem;
+  width:2.4rem;
+  height:2.9rem;
+}
+.djkqBtn{
+  position: absolute;
+  top:2.9rem;
+  left:1.4rem;
+  width:2.1rem;
+  height:0.65rem;
+}
+.tc_txt1{
+  margin-top:3.65rem;
+  width:100%;
+  font-size:0.32rem;
+  color:#fffefe;
+  text-align: center;
+}
+.backBtn{
+  margin:0.5rem auto;
+  width:2.9rem;
+  height:0.7rem;
+  font-size:0.34rem;
+  color:#fff;
+  line-height: 0.7rem;
+  text-align: center;
+  background: #f99bbf;
+  border:2px solid #fff;
+  border-radius: 0.1rem;
+
+}
+/*抽奖弹层部分结束*/
+
+/*奖品弹层部分开始*/
+.tc_warpD{
+  margin-top:1.86rem;
+  width:4.86rem;
+}
+.sw_jp_tc,.xn_jp_tc{
+  display: none;
+}
+.tc_warpD_div1{
+  height:1.3rem;
+  background: #f79dbf;
+  border-radius:0.3rem 0.3rem 0 0;
+  text-align: center;
+}
+.tc_tit_pic1{
+  width:3.86rem;
+  height:2.97rem;
+  margin:-1.6rem auto 0;
+}
+.tc_warpD_div2{
+  height:auto;
+  padding-bottom:0.3rem;
+  border-radius:0 0 0.3rem 0.3rem;
+  background: #fff;
+}
+.tc_txt2{
+  float:left;
+  width:100%;
+  text-align: center;
+  margin-top:-0.4rem;
+  font-size:0.53rem;
+  color:#de2567;
+}
+.tc_txt3{
+  float:left;
+  width:100%;
+  text-align: center;
+  font-size:0.36rem;
+  color:#de2567;
+  margin-bottom:0.2rem;
+}
+.tc_txt4{
+  font-size:0.24rem;
+  color:#010101;
+  text-align: center;
+}
+.txyjdzBtn{
+  margin:0.5rem auto;
+  width:2.8rem;
+  height:0.75rem;
+  font-size:0.34rem;
+  color:#fff;
+  line-height: 0.7rem;
+  text-align: center;
+  background: #4d8cdc;
+  border:2px solid #fff;
+  border-radius: 0.1rem;
+}
+.paddingB30{
+  padding-bottom:0.5rem;
+}
+.paddingT30{
+  padding-top:0.3rem;
+}
+.Line45{
+  line-height: 0.45rem;
+}
+.knoweBtn{
+  margin:0.5rem auto;
+  width:2.8rem;
+  height:0.75rem;
+  font-size:0.34rem;
+  color:#fff;
+  line-height: 0.7rem;
+  text-align: center;
+  background: #f99bbf;
+  border:2px solid #fff;
+  border-radius: 0.1rem;
+}
+.tc_warpD_div3{
+  height:1.3rem;
+  background: #a1a1a1;
+  border-radius:0.3rem 0.3rem 0 0;
+  text-align: center;
+}
+.tc_tit_pic3{
+  width:1.98rem;
+  height:1.24rem;
+}
+/*奖品弹层部分结束*/
