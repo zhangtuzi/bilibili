@@ -1,0 +1,43 @@
+body{
+  background-image: url('images/bjlogo.png');
+  background-color:#4381d7;
+  background-size:6.4rem auto;
+}
+
+.warpAll{
+  width:6.4rem;
+  margin:0 auto;
+  text-align: center;
+}
+.giftLi_title{
+  width:5.12rem;
+  height:3.19rem;
+  display: block;
+  margin:0.28rem auto 0;
+}
+.ck_myGift{
+  float:left;
+  width:100%;
+  font-size:0.26rem;
+  color:#fff;
+  text-decoration:underline;
+}
+
+/*奖品列表区域部分开始*/
+.giftList_warp{
+  width:5.94rem;
+  margin:0.7rem auto 1rem;
+  background: #fff;
+  position: relative;
+}
+.giftL_tit{
+  position: absolute;
+  top:-0.2rem;
+  left:1.02rem;
+  width:3.9rem;
+  height:1.15rem;
+}
+
+
+
+/*奖品列表区域部分结束*/
