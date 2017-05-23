@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>绑定验证</title>
+    <title>bilibili卡充值抽奖活动</title>
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/czym.css"/>
     <script src="js/jquery-1.8.3.min.js"></script>
@@ -30,8 +30,8 @@
 			<div class="xian"></div>
 			<div class="wbq_zuo">
 				<ul>
-					<li><span class="xin">*</span>手机号：</li>
-					<li><span class="xin">*</span>验证码：</li>
+					<li><!--<span class="xin">*</span>-->手机号：</li>
+					<li><!--<span class="xin">*</span>-->验证码：</li>
 				</ul>
 			</div>
 			<div class="wbq_you">
@@ -45,7 +45,7 @@
 		   	 				<li style="float: left;width:1.8rem;"><span class="p_wb">获取验证码</span><p class="p_wbys"></p></li>
 		   	 				
 		   	 			</ul>
-		   	 			<h6 class="h6"><img src="images/gth.png" class="gth"/>手机号码格式错误</h6>
+		   	 			<h6 class="h6"><img src="images/gth.png" class="gth"/><span class="wzxg">手机号码格式错误</span></h6>
    	                </div>
    	    	    </li>
 				 </ul>
@@ -69,7 +69,7 @@ $(function(){
 		
 		if(val=" "){
 			$(".h6").css("display","block");
-			$(".h6").text("验证码不能为空");
+			$(".wzxg").text("验证码不能为空");
 		}
 	});
 //手机验证码
@@ -78,7 +78,7 @@ $(function(){
 			var val = $('#sfz').val().replace(/\s+/g,""); //获取输入手机号码
 			if(!numbers.test(val) || val.length ==0){
 					$(".h6").css("display","block");
-					$(".h6").text("手机号码格式错误");
+					$(".wzxg").text("手机号码格式错误");
 			}
 			
 			if(numbers.test(val)){

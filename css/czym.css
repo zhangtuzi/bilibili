@@ -3,15 +3,20 @@ body{
 }
 .zt_bjsl{
 	width: 6.4rem;
-	height:10.8rem;
+	height:8.8rem;
 	margin: 0 auto;
 	position: relative;
 	background: #3c7fc2;
 }
+.cloh{
+	color:#fff252;
+	font-weight: 700;
+	
+}
 .zt_bjsh{
 	width: 6.4rem;
-	height: 17.5rem;
 	margin: 0 auto;
+	padding-top: 1rem;
 	background: #fb7299;
 }
 .ztlogo{
@@ -20,6 +25,13 @@ body{
 	margin: 0 auto;
 	background: url(../images/bjlogo.png);
 	background-size: 100% 1.66rem;
+	text-align: center;
+}
+.ztlogo1{
+	width: 6.4rem;
+	height:auto;
+	margin: 0 auto;
+	
 	text-align: center;
 }
 .img_top{
@@ -32,15 +44,16 @@ body{
 .czcdj{
 	width: 4.63rem;
 	height: 1.2rem;
+	line-height: 0.1rem;
 	margin: 0 auto;
-	margin-top:0.2rem;
-	padding-top: 0.16rem;
-	background: url(../images/biaoqian.png) no-repeat;
+	/*margin-top:0.2rem;*/
+	/*background: url(../images/biaoqian.png) no-repeat;*/
 	background-size: 4.63rem 1.2rem;
 }
 .hali{
-	width: 3.5rem;
-	height: 0.77rem;
+	width: 4.13rem;
+	/*height: 0.77rem;*/
+	vertical-align: middle;
 	text-align: center;
 }
 .but{
@@ -55,7 +68,7 @@ body{
 }
 .qxbj{
 	width:6.4rem;
-    height: 4rem;
+    height: 2.5rem;
     position: absolute;
     left: 0px;
     top: 7rem;
@@ -68,9 +81,36 @@ body{
     font-size: 0.3rem;
     color: #FFFFFF;
     left: 50%;
-    top: -50px;
+    top: -20px;
     margin-left: -0.6rem;
 	
+}
+.xuxian{
+	width: 5.6rem;
+	height: 1px;
+	font-size: 0.3rem;
+	color:#ffdc25;
+	margin: 0 auto;
+	margin-top:0.9rem;
+	border-bottom: 1px  dashed #FFFFFF;
+}
+.xuxian p{
+	float: left;
+	margin-left:1.2rem;
+	margin-top: -0.2rem;
+	background: #fb7299;
+	width: 3rem;
+}
+.hdyh{
+	width: 4.6rem;
+	height: 0.8rem;
+	margin: 0 auto;
+	margin-top:0.5rem;
+	font-size: 0.26rem;
+	color: #FFFFFF;
+}
+.col{
+	color: #fff252;
 }
 .bbimg{
 	width: 6.4rem;
@@ -78,7 +118,10 @@ body{
 }
 .hdbq{
 	width: 3.86rem;
-	height: 1rem;
+    height: 1rem;
+    margin-left: 1.2rem;
+    float: left;
+    margin-top: -1rem;
 }
 .hdgzwz{
  width: 5.4rem;
@@ -90,8 +133,7 @@ body{
 	height:3rem;
 	font-size: 0.26rem;
 	color: #FFFFFF;
-	padding-top: 0.4rem;
-	border-bottom: 1px dashed #FFFFFF;
+	padding-top: 0.1rem;
 }
 .wz_1 li{
 	height: 0.4rem;
@@ -106,11 +148,11 @@ body{
 	font-size: 0.26rem;
 	padding-top: 0.4rem;
 	color: #FFFFFF;
-	border-bottom: 1px dashed #FFFFFF;
 }
 .wz_2 p{
 	width: 5.43rem;
 	height: 1.35rem;
+	text-align: left;
 	margin: 0 auto;
 }
 .wz_3{
@@ -121,7 +163,7 @@ body{
 }
 .wz_3_1{
 	width: 5.52rem;
-	height: 4rem;
+	height:2.3rem;
 	margin: 0 auto;
 	text-align: left;
 }
@@ -129,13 +171,10 @@ body{
 	color: #fff252;	
 	text-align: center;
 }
-.hbwb{
-	width: 5.52rem;
-	margin-top: 0.45rem;
-}
 .hd{
 	width: 0.13rem;
 	height: 0.13rem;
+	margin-right: 0.1rem;
 	display: inline-block;
 	border-radius: 0.2rem;
 	background: #ffff00;
@@ -245,7 +284,7 @@ body{
 		    border-radius: 0.07rem;
 		}
 		.p_wbys{
-			 background: #DEDEDE;
+			 background: #999;
 			 display: none;
 		}
 		.h6 {

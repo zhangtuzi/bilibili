@@ -5,7 +5,7 @@ $(function(){
     $('.tc_divs,.mc_bg').hide();
   })
 
-  // 抽奖规则按钮
+  // 领奖须知按钮
   $('.cjgz_btn').click(function(){
       var win_height=$(window).height();
     $('.sweepstake_gz_nr').css('max-height',win_height-260);

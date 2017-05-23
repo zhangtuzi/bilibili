@@ -68,8 +68,7 @@ body{
 }
 /*奖品列表区域部分开始*/
 .giftList_warp{
-  width:5.94rem;
-  margin:0.7rem auto 1rem;
+  margin:0.7rem 0.3rem 1rem;
   background: #fff;
   position: relative;
   padding-top:1rem;
@@ -83,15 +82,14 @@ body{
   height:1.15rem;
 }
 .gift_ul{
-  width:5.16rem;
-  margin:0 auto;
-  font-size:0.3rem;
+  margin:0 0.3rem;
+  font-size:0.28rem;
   color:#fff;
   line-height: 0.32rem;
 }
 .gift_ul>li{
   float:left;
-  width:2.42rem;
+  width:2.55rem;
   margin-right:0.1rem;
   margin-bottom:0.2rem;
   display: table;
@@ -101,13 +99,14 @@ body{
   margin-right:0!important;
 }
 .gift_ul .gift_li1{
-  width:5.12rem;
+  width:100%;
   height:1.8rem;
   display: table;
   -webkit-display: table;
 }
 .gift_pic_wD1{
   float:left;
+	width:1.8rem;
   height:1.75rem;
   border:2px dashed #3c7fc2;
   border-right:none;
@@ -118,8 +117,8 @@ body{
   margin:0 auto;
 }
 .gift_txt1{
-  float:right;
-  width:2.57rem;
+  float:left;
+  width:2.6rem;
   height:1.75rem;
   padding:0 0.35rem;
   text-align: left;
@@ -146,6 +145,11 @@ body{
 }
 .gift_pic2{
   width:1.9rem;
+  height:1.75rem;
+  margin:0 auto;
+}
+.gift_pic3{
+	width:2.34rem;
   height:1.75rem;
   margin:0 auto;
 }
@@ -352,7 +356,8 @@ body{
 	margin-left: -2.9rem;
 }
 .sweepstake_gz_nr1{
-	/*max-height:4rem;*/
+	padding-left:0.4rem;
+	padding-right:0.4rem;
 	overflow: auto;
 }
 .sweepstake_gz_txt1{
@@ -364,10 +369,39 @@ body{
 	margin-top:0;
 }
 .tc_txt5{
+	float:left;
+	width:4.4rem;
+	display: inline-block;
 	font-size:0.26rem;
 	line-height: 0.36rem;
-	margin:0 0.2rem;
 	margin-bottom:0.4rem;
+}
+.gz_index{
+	float:left;
+	width:0.26rem;
+	height:0.26rem;
+	border-radius:50%;
+	background:#3e3e3e;
+	color:#fff;
+	font-size: 0.24rem;
+	line-height: 0.26rem;
+	text-align: center;
+	display: inline-block;
+	margin-top:0.05rem;
+	margin-right:0.05rem;
+}
+.st_ewm_div{
+	float:left;
+	width:100%;
+	height:1.49rem;
+	text-align:center;
+	margin-top: -0.3rem;
+	margin-bottom: 0.2rem;
+}
+.st_ewm{
+	width:1.49rem;
+	height:1.49rem;
+	margin:0 auto;
 }
 /*奖品弹层部分结束*/
 
