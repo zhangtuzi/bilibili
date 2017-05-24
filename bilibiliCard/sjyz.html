@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>bilibili卡充值抽奖活动</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/czym.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/top.js"></script>
+    <style type="text/css">
+    	body{
+    		background: #3c7fc2;
+    	}	
+    </style>
+</head>
+<body>
+	<div class="zt_body">
+		<div class="bjimg">
+		<div class="zt_head">
+			<ul>
+				<li><p>请填写您的哔哩哔哩卡手机号码</p></li>
+			</ul>
+		</div>
+		<div class="zt_wbq">
+			<div class="xian"></div>
+			<div class="wbq_zuo">
+				<ul>
+					<li><!--<span class="xin">*</span>-->手机号：</li>
+					<li><!--<span class="xin">*</span>-->验证码：</li>
+				</ul>
+			</div>
+			<div class="wbq_you">
+				 <ul>
+				 	<li><input type="text" name="" class="inp_wit" id="sfz" value="" placeholder="请输入手机号"/></li>
+				 	
+				 	<li>
+   	    			<div class="div_ys" >
+		   	 			<ul class="div-phone">
+		   	 				<li style="width: 2rem !important;float:left;"><input type="text" name="mima" id="mima" value="" placeholder="请输入验证码"/></li>
+		   	 				<li style="float: left;width:1.8rem;"><span class="p_wb">获取验证码</span><p class="p_wbys"></p></li>
+		   	 				
+		   	 			</ul>
+		   	 			<h6 class="h6"><img src="images/gth.png" class="gth"/><span class="wzxg">手机号码格式错误</span></h6>
+   	                </div>
+   	    	    </li>
+				 </ul>
+			</div>
+		</div>
+		
+		<div class="butt">
+			<p class="qdtj">确认提交</p>
+		</div>
+		
+	</div>	
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	var  hei=$(document).height();
+	     $(".zt_body").height(hei);
+	      $(".bjimg").height(hei);
+	$(".qdtj").click(function(){
+		var val=$("#mima").val();
+		
+		if(val=" "){
+			$(".h6").css("display","block");
+			$(".wzxg").text("验证码输入错误");
+		}
+	});
+//手机验证码
+  $(".p_wb").click(function(){
+			var numbers = /^1\d{10}$/;
+			var val = $('#sfz').val().replace(/\s+/g,""); //获取输入手机号码
+			if(!numbers.test(val) || val.length ==0){
+					$(".h6").css("display","block");
+					$(".wzxg").text("手机号码格式错误");
+			}
+			
+			if(numbers.test(val)){
+				$(".h6").css("display","none");
+				var time = 60;
+				function timeCountDown(){
+					$(".p_wb").css("display","none");
+				    $(".p_wbys").css("display","block");
+					if(time==0){
+						clearInterval(timer);
+						$('.div-phone p').addClass('send1').removeClass('send0').html("获取验证码");
+						$(".p_wb").css("display","block");
+				        $(".p_wbys").css("display","none");
+						sends.checked = 1;
+						return true;
+					}
+					$('.div-phone p').html(time+"S");
+					time--;
+					return false;
+					sends.checked = 0;
+				}
+				$('.div-phone p').addClass('send0').removeClass('send1');
+				timeCountDown();
+				var timer = setInterval(timeCountDown,1000);
+			}
+	}
+)
+
+
+})
+	
+</script>
+</html>
