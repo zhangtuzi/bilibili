@@ -459,3 +459,20 @@ body{
 	color:#fff;
 }
 /*我的奖品页面部分结束*/
+
+/*活动结束页面部分开始*/
+.endBody{
+	background-image: url('images/bjlogo1.png');
+	background-color: #e8e8e8;
+	background-size:6.4rem auto;
+}
+.hd_endPic{
+	width:2.5rem;
+	margin:3.5rem auto 0.2rem;
+}
+.end_tipT{
+	width:100%;
+	font-size:0.24rem;
+	color:#010101;
+}
+/*活动结束页面部分结束*/
